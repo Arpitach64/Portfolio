@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arpita Chaudhary | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">Arpita<span>.</span></div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+  <canvas id="sparkle-canvas"></canvas>
+
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="logo">Arpita<span>.</span></div>
+    <ul id="navMenu">
+      <li><a href="#about" onclick="closeNav()">About</a></li>
+      <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+      <li><a href="#projects" onclick="closeNav()">Projects</a></li>
+      <li><a href="#certifications" onclick="closeNav()">Achievements</a></li>
+      <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="themeToggle" aria-label="Toggle theme">&#9790;</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-layout">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open to Internships &amp; Opportunities
+        </div>
+        <h1>
+          Hi, I'm Arpita Chaudhary
+          <span class="line2"><span class="typing-text"></span><span class="cursor-blink">|</span></span>
+        </h1>
+        <p class="hero-sub">
+          3rd Year B.Tech CSE (AI/ML) student at AKTU &middot; Building responsive, interactive web apps with HTML, CSS, Tailwind &amp; JavaScript.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Projects</a>
+          <a href="https://github.com/Arpitach64" target="_blank" class="btn-outline">&#128025; GitHub</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo-wrap">
+          <img src="arpita.jpeg" alt="Arpita Chaudhary" class="hero-photo"/>
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-ring2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" id="heroScroll">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-avatar">&#128105;&#8205;&#128187;</div>
+        <div class="about-deco"></div>
+      </div>
+      <div class="about-text reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Arpita Chaudhary</h2>
+        <p>I am a B.Tech Computer Science (AI &amp; ML) student at Dr. A.P.J. Abdul Kalam Technical University (AKTU), Greater Noida, UP. I have a strong foundation in programming and web technologies.</p>
+        <p>Seeking a position where I can learn new skills, expand my knowledge and make use of my technical abilities to contribute meaningfully to any organization I join.</p>
+        <div class="about-chips">
+          <span class="chip">&#127891; B.Tech CSE (AI/ML) &mdash; AKTU</span>
+          <span class="chip">&#128205; Greater Noida, UP</span>
+          <span class="chip">&#128202; CGPA: 80.73%</span>
+          <span class="chip">&#127942; SIH Selected</span>
+          <span class="chip">&#9729;&#65039; AWS Academy Graduate</span>
+        </div>
+        <a href="Arpita_Chaudhary_Resume.pdf" download="Arpita_Chaudhary_Resume.pdf" class="btn-resume">&#11015; Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" style="background: var(--surface);">
+    <div class="section-label">What I Know</div>
+    <h2 class="section-title">Skills &amp; Technologies</h2>
+    <p class="section-sub">Technical skills from coursework, projects and certifications.</p>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon">&#127760;</div>
+        <div class="skill-name">Web Technologies</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+          <span class="skill-tag">Tailwind CSS</span><span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Fetch API</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>85%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon">&#128187;</div>
+        <div class="skill-name">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span><span class="skill-tag">C</span><span class="skill-tag">Python</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>75%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon">&#128451;&#65039;</div>
+        <div class="skill-name">Database &amp; Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span><span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Git &amp; GitHub</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>70%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon">&#128218;</div>
+        <div class="skill-name">Core CS Concepts</div>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA</span><span class="skill-tag">OOPs</span>
+          <span class="skill-tag">OS</span><span class="skill-tag">DBMS</span>
+          <span class="skill-tag">Computer Networks</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>78%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" data-tilt>
+        <div class="skill-icon">&#129309;</div>
+        <div class="skill-name">Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Problem Solving</span><span class="skill-tag">Collaboration</span>
+          <span class="skill-tag">Adaptability</span><span class="skill-tag">Critical Thinking</span>
+        </div>
+        <div class="skill-bar-wrap">
+          <div class="skill-bar-label"><span>Proficiency</span><span>90%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">My Work</div>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">Real projects I've built &mdash; available on my GitHub.</p>
+
+    <div class="projects-grid">
+      <div class="project-card reveal" data-tilt data-cat="web api js">
+        <div class="project-thumb p1">&#127869;&#65039;</div>
+        <div class="project-body">
+          <h3>Recipe Finder</h3>
+          <p>Single-page responsive web app that fetches recipe data via Spoonacular API. Features dark mode, meal planner, shopping list &amp; WhatsApp share.</p>
+          <div class="project-stack">
+            <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">Spoonacular API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://arpitach64.github.io/RECIPE-FINDER-Project/" target="_blank" class="proj-link">&#128279; Live Demo</a>
+            <a href="https://github.com/Arpitach64/RECIPE-FINDER-Project" target="_blank" class="proj-link">&#9889; GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-tilt data-cat="web js">
+        <div class="project-thumb p2">&#128187;</div>
+        <div class="project-body">
+          <h3>Code IDE</h3>
+          <p>In-browser code editor (MiniIDE) supporting HTML, CSS, JS, Python, Java &amp; C++. Monaco Editor, live preview, Skulpt Python, ZIP download.</p>
+          <div class="project-stack">
+            <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">Monaco Editor</span>
+          </div>
+          <div class="project-links">
+            <a href="https://arpitach64.github.io/CODE-IDE-Project/" target="_blank" class="proj-link">&#128279; Live Demo</a>
+            <a href="https://github.com/Arpitach64/CODE-IDE-Project" target="_blank" class="proj-link">&#9889; GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-tilt data-cat="web api js">
+        <div class="project-thumb p3">&#127828;</div>
+        <div class="project-body">
+          <h3>Foodie Express</h3>
+          <p>Premium food delivery web app with voice search, dark mode, virtual wallet, PDF invoicing, smart wishlist &amp; location detection.</p>
+          <div class="project-stack">
+            <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">jsPDF</span>
+          </div>
+          <div class="project-links">
+            <a href="https://arpitach64.github.io/foodie-express/" target="_blank" class="proj-link">&#128279; Live Demo</a>
+            <a href="https://github.com/Arpitach64/foodie-express" target="_blank" class="proj-link">&#9889; GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" style="background: var(--surface);">
+    <div class="section-label">My Journey</div>
+    <h2 class="section-title">Education</h2>
+    <p class="section-sub">Academic background and qualifications.</p>
+    <div class="edu-timeline">
+      <div class="edu-card reveal">
+        <div class="edu-icon">&#127891;</div>
+        <div class="edu-body">
+          <div class="edu-year">2023 &ndash; 2027</div>
+          <h3>B.Tech &mdash; CSE (AI &amp; ML)</h3>
+          <p class="edu-inst">Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
+          <p class="edu-loc">&#128205; Greater Noida, UP</p>
+          <span class="chip" style="margin-top:.8rem;display:inline-block;">CGPA: 80.73% (till 4th sem)</span>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon">&#127979;</div>
+        <div class="edu-body">
+          <div class="edu-year">Class XII</div>
+          <h3>Senior Secondary</h3>
+          <p class="edu-inst">Little Flower School</p>
+          <p class="edu-loc">&#128205; Gorakhpur, UP</p>
+          <span class="chip" style="margin-top:.8rem;display:inline-block;">85.20%</span>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon">&#128214;</div>
+        <div class="edu-body">
+          <div class="edu-year">Class X</div>
+          <h3>Secondary Education</h3>
+          <p class="edu-inst">Little Flower School</p>
+          <p class="edu-loc">&#128205; Gorakhpur, UP</p>
+          <span class="chip" style="margin-top:.8rem;display:inline-block;">80.00%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="section-label">Recognition</div>
+    <h2 class="section-title">Certifications &amp; Achievements</h2>
+    <p class="section-sub">Milestones I'm proud of.</p>
+    <div class="cert-grid">
+      <div class="cert-card reveal" data-tilt>
+        <div class="cert-icon">&#9729;&#65039;</div>
+        <h3>AWS Academy Graduate</h3>
+        <p>Completed Amazon Web Services Academy program &mdash; foundational cloud computing skills.</p>
+      </div>
+      <div class="cert-card reveal" data-tilt>
+        <div class="cert-icon">&#127942;</div>
+        <h3>Selected in SIH</h3>
+        <p>Selected in Smart India Hackathon at college level &mdash; problem-solving and teamwork under pressure.</p>
+      </div>
+      <div class="cert-card reveal" data-tilt>
+        <div class="cert-icon">&#128220;</div>
+        <h3>Infosys &mdash; DSA Certification</h3>
+        <p>Infosys certification on Data Structures &amp; Algorithms using Python &amp; Java.</p>
+      </div>
+      <div class="cert-card reveal" data-tilt>
+        <div class="cert-icon">&#128188;</div>
+        <h3>JPMC Forage &mdash; Software Engineering</h3>
+        <p>J.P. Morgan Advanced Software Engineering virtual experience program on Forage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background: var(--surface);">
+    <div class="section-label" style="text-align:center">Say Hello</div>
+    <h2 class="section-title" style="text-align:center">Get In Touch</h2>
+    <p class="section-sub" style="margin:0 auto 3rem;text-align:center">Have a project, internship opportunity, or just want to connect?</p>
+    <div class="contact-wrap reveal">
+      <h3>Let's Talk &#128075;</h3>
+      <p>Fill out the form and I'll get back to you soon.</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>YOUR NAME</label>
+          <input type="text" id="fname" placeholder="John Doe"/>
+        </div>
+        <div class="form-group">
+          <label>EMAIL ADDRESS</label>
+          <input type="email" id="femail" placeholder="john@email.com"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>SUBJECT</label>
+        <input type="text" id="fsubject" placeholder="Internship / Collaboration / Project..."/>
+      </div>
+      <div class="form-group">
+        <label>MESSAGE</label>
+        <textarea id="fmsg" placeholder="Tell me about your opportunity or project idea..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;" onclick="sendMessage()">Send Message &#9993;&#65039;</button>
+      <div id="form-msg">&#10003; Message sent! I'll get back to you soon.</div>
+      <div class="contact-links">
+        <a href="mailto:arpitachaudhary489@gmail.com" class="social-link">&#128231; arpitachaudhary489@gmail.com</a>
+        <a href="https://github.com/Arpitach64" target="_blank" class="social-link">&#128025; GitHub</a>
+        <a href="https://www.linkedin.com/in/arpita-chaudhary-a742162b7/" target="_blank" class="social-link">&#128188; LinkedIn</a>
+        <a href="https://leetcode.com/u/arpitach76/" target="_blank" class="social-link">&#128187; LeetCode</a>
+        <a href="https://www.hackerrank.com/profile/arpitachaudhary3" target="_blank" class="social-link">&#9971; HackerRank</a>
+        <a href="tel:9336804423" class="social-link">&#128222; 9336804423</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; Built by <span>Arpita Chaudhary</span> &middot; <span id="footerYear"></span> &middot; Made with &#10084;&#65039; &amp; lots of &#9749;</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
