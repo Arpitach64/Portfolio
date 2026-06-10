@@ -743,12 +743,11 @@ section {
     margin-bottom: 1rem;
 }
 
-.about-chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+.about-chips{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .chip {
