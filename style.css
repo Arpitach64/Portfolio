@@ -1019,6 +1019,10 @@ section {
     background: rgba(168, 85, 247, 0.1);
 }
 
+.p4 {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
 /* =====================
    CURRENTLY LEARNING
    ===================== */
